@@ -4,4 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a061d55c5b887ff48ae8bbbc3026fb72
+  - enabled: 1
+    path: Assets/Scenes/SelectLiquid.unity
+    guid: 304ef220ee3b8cd4488ea93da74ded62
+  - enabled: 1
+    path: Assets/Scenes/LabsInstruction-Step1.unity
+    guid: 3303f038c9f28a84eb95fa6c4704dcc4
+  - enabled: 1
+    path: Assets/Scenes/LabsInstruction-Step2.unity
+    guid: 625767e9665ffed46bbb60e3c8b5cd5f
+  - enabled: 1
+    path: Assets/Scenes/LabsInstruction-Step3.unity
+    guid: 139db7715d8e4ca49ac4a121efa389f0
+  - enabled: 1
+    path: Assets/Scenes/MainARCamera.unity
+    guid: 0f6d4beb5ece8984c99189c533bebff8

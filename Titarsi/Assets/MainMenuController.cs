@@ -9,7 +9,7 @@ public class MainMenuController : MonoBehaviour {
 	int backCounter = 0;
 
 	void Start () {
-		showToast("Press back once again", 2);
+		
 	}
 
 	void Update () {
