@@ -90,6 +90,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+		DetectionManager("found");
     }
 
 
@@ -110,7 +112,25 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+		DetectionManager("lost");
     }
+
+	private void DetectionManager(string ket)
+	{
+		bool nilai;
+		string namatarget = mTrackableBehaviour.TrackableName;
+		nilai = (ket == "found") ? true : false;
+		switch (namatarget)
+		{
+		case "marker-buret" :
+			TargetBuret.Instance.terdeteksi = nilai;
+			break;
+		case "marker-erlenmeyer" :
+			TargetErlenmeyer.Instance.terdeteksi = nilai;
+			break;
+		}
+	}
 
     #endregion // PROTECTED_METHODS
 }
