@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class InteractionController : MonoBehaviour {
 
@@ -14,6 +15,14 @@ public class InteractionController : MonoBehaviour {
 	public GameObject sphereErlenmeyer;
 
 	public GameObject interaction;
+
+	public Text txt;
+
+	public Text selesai;
+
+	public GameObject btnTetes;
+
+	double v1 = 0;
 
 	void Start () {
 		SetCondition (true);
@@ -37,9 +46,29 @@ public class InteractionController : MonoBehaviour {
 
 		if (Application.platform == RuntimePlatform.Android) {
 			if (Input.GetKey (KeyCode.Escape)) {
-				SceneManager.LoadScene ("LabInstruction-Step3");
+				SceneManager.LoadScene ("LabsInstruction-Step3");
 				return;
 			}
+		}
+	}
+
+	public void hitungMolaritas(){
+
+		double tetes = 2.5;
+
+		double v2 = 25;
+		double m1 = 0.1;
+		double m2;
+
+		v1 = v1 + tetes;
+
+		if (v1 > 28) {
+			btnTetes.SetActive (false);
+			selesai.text = "Praktikum telah selesai";
+		} else {
+			m2 = (v1 * m1) / v2;
+			txt.text = m2.ToString();
+			selesai.text = "";
 		}
 	}
 
