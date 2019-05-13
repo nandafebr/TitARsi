@@ -23,3 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainARCamera.unity
     guid: 0f6d4beb5ece8984c99189c533bebff8
+  - enabled: 1
+    path: Assets/Scenes/HowToPlayMenu.unity
+    guid: d294c973457bc1f40a654f70e808f968
+  - enabled: 1
+    path: Assets/Scenes/AboutMenu.unity
+    guid: a95fb6087cf65b549bb7f1316809585c

@@ -27,6 +27,14 @@ public class MainMenuController : MonoBehaviour {
 		SceneManager.LoadScene ("SelectLiquid");
 	}
 
+	public void AboutMenu(){
+		SceneManager.LoadScene ("AboutMenu");
+	}
+
+	public void HowToPlayMenu(){
+		SceneManager.LoadScene ("HowToPlayMenu");
+	}
+
 	public void ExitApplication() {
 		Application.Quit ();
 	}
