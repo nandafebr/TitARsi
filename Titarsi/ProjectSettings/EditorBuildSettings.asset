@@ -29,3 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AboutMenu.unity
     guid: a95fb6087cf65b549bb7f1316809585c
+  - enabled: 1
+    path: Assets/Scenes/AnimationPipetErlenmeyer.unity
+    guid: 88ce14cfe99fe874389f34de3008132b
+  - enabled: 1
+    path: Assets/Scenes/AnimationPipetBuret.unity
+    guid: c6be39bc4f2278144a06403792fe1517
+  m_configObjects: {}
