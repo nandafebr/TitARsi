@@ -18,17 +18,15 @@ public class LabsInstructionController : MonoBehaviour {
 
 	public PersistObjScript script;
 
-	GameObject scripts;
-
 	void Start () {
-		scripts = GameObject.Find ("PersistantObject");
-		script = scripts.GetComponents<PersistObjScript> ();
+
 	}
 		
 
 	void Update () {
 		text = inputField.text;
 		script.dataString = text;
+		Debug.Log (script.dataString);
 		textInt = int.Parse (text);
 
 		if (textInt <= 25) {
